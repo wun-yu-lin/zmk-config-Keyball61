@@ -65,11 +65,11 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESC           &kp N1  &kp N2   &kp N3  &kp N4            &kp N5                                         &kp N6           &kp N7  &kp N8     &kp N9   &kp N0          &kp EQUAL
-&kp TAB           &kp Q   &lt 7 W  &kp E   &kp R             &kp T                                          &kp Y            &kp U   &kp I      &kp O    &kp P           &kp MINUS
-&kp CAPS          &kp A   &kp S    &kp D   &kp F             &kp G                                          &kp H            &kp J   &kp K      &kp L    &kp LEFT_BRACE  &kp RIGHT_BRACE
-&lt 2 LEFT_SHIFT  &kp Z   &kp X    &kp C   &kp V             &kp B             &kp LEFT_ALT  &kp BACKSLASH  &kp N            &kp M   &kp COMMA  &kp DOT  &kp COLON       &kp DOUBLE_QUOTES
-&kp GRAVE         &trans  &trans   &trans  &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp SPACE     &lt 3 ENTER    &lt 2 BACKSPACE                              &kp LEFT_ARROW  &kp RIGHT_ARROW
+&kp ESC           &kp N1  &kp N2         &kp N3  &kp N4              &kp N5                                       &kp N6           &kp N7  &kp N8     &kp N9   &kp N0          &kp EQUAL
+&kp TAB           &kp Q   &lt 7 W        &kp E   &kp R               &kp T                                        &kp Y            &kp U   &kp I      &kp O    &kp P           &kp MINUS
+&kp CAPS          &kp A   &kp S          &kp D   &kp F               &kp G                                        &kp H            &kp J   &kp K      &kp L    &kp LEFT_BRACE  &kp RIGHT_BRACE
+&lt 2 LEFT_SHIFT  &kp Z   &kp X          &kp C   &kp V               &kp B             &kp LEFT_ALT  &kp SLASH    &kp N            &kp M   &kp COMMA  &kp DOT  &kp COLON       &kp DOUBLE_QUOTES
+&kp GRAVE         &trans  &kp BACKSLASH  &trans  &lt 7 LEFT_COMMAND  &kp LEFT_CONTROL  &kp SPACE     &lt 3 ENTER  &lt 2 BACKSPACE                              &kp LEFT_ARROW  &kp RIGHT_ARROW
             >;
         };
 
@@ -88,11 +88,11 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&trans  &bt BT_CLR       &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3                  &trans          &trans         &trans                &trans                 &trans        &kp PLUS
-&trans  &trans           &kp ASTERISK   &kp HASH          &trans        &trans                        &kp PIPE        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp UNDERSCORE
-&trans  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans        &trans                        &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
-&trans  &kp CARET        &trans         &trans            &trans        &trans        &trans  &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT        &trans
-&trans  &trans           &trans         &trans            &trans        &trans        &trans  &trans  &trans                                                                      &trans        &trans
+&trans  &bt BT_CLR       &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3                        &trans          &trans         &trans                &trans                 &trans        &kp PLUS
+&trans  &trans           &kp ASTERISK   &kp HASH          &trans        &trans                              &kp PIPE        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT   &kp UNDERSCORE
+&trans  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans        &trans                              &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION  &trans
+&trans  &kp CARET        &trans         &trans            &trans        &trans        &trans  &kp QUESTION  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT        &trans
+&trans  &trans           &trans         &trans            &trans        &trans        &trans  &trans        &trans                                                                      &trans        &trans
             >;
         };
 

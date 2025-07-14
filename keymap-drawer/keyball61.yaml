@@ -37,7 +37,7 @@ layers:
   - L
   - '{'
   - '}'
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYM}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -54,7 +54,7 @@ layers:
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Alt+$$mdi:keyboard-esc$$', h: bt}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:apple-keyboard-control$$', h: window_switch}
   - $$mdi:keyboard-space$$
@@ -126,16 +126,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - $$mdi:apple-keyboard-control$$
+  - '&'
+  - '*'
+  - (
+  - )
   - +
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,7 +161,7 @@ layers:
   - )
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -175,6 +175,7 @@ layers:
   - '>'
   - ':'
   - '"'
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -182,8 +183,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
@@ -550,7 +550,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

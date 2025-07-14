@@ -49,14 +49,14 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - ':'
-  - '"'
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:apple-keyboard-command$$', h: window_switch}
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: window_switch}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: '$$mdi:backspace$$', h: SYM}
@@ -159,8 +159,8 @@ layers:
   - {t: '=', s: +}
   - (
   - )
-  - '?'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {type: held}
   - ^
   - {t: '$$mdi:transfer$$', type: trans}
@@ -173,8 +173,8 @@ layers:
   - +
   - '{'
   - '}'
-  - '@'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ':'
+  - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -489,8 +489,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

@@ -91,7 +91,7 @@
 &trans  &bt BT_CLR       &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3                        &trans          &trans         &trans                &trans                 &trans            &kp PLUS
 &trans  &trans           &kp ASTERISK   &kp HASH          &trans        &trans                              &kp PIPE        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT       &kp UNDERSCORE
 &trans  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &trans        &trans                              &kp MINUS       &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &kp CARET        &trans         &trans            &trans        &trans        &trans  &kp QUESTION  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON         &kp DOUBLE_QUOTES
+&trans  &kp CARET        &trans         &trans            &trans        &trans        &trans  &kp QUESTION  &kp UNDERSCORE  &kp PLUS       &kp LESS_THAN         &kp GREATER_THAN       &kp COLON         &kp DOUBLE_QUOTES
 &trans  &trans           &trans         &trans            &trans        &trans        &trans  &trans        &trans                                                                      &trans            &trans
             >;
         };
@@ -147,6 +147,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &ctrl_arrow_left  &trans  &trans  &ctrl_arrow_right  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans             &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &trans  &trans
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                          &trans  &trans
             >;
         };
     };

@@ -57,6 +57,34 @@
 
             label = "CTRL_ARROW_RIGHT";
         };
+
+        ctrl_arrow_up: ctrl_arrow_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRL_ARROW_UP";
+        };
+
+        ctrl_arrow_down: ctrl_arrow_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "CTRL_ARROW_DOWN";
+        };
     };
 
     keymap {
@@ -66,7 +94,7 @@
             label = "QWRT";
             bindings = <
 &kp ESC         &kp N1  &kp N2         &kp N3         &kp N4            &kp N5                                         &kp N6           &kp N7  &kp N8     &kp N9   &kp N0          &kp EQUAL
-&kp TAB         &kp Q   &lt 7 W        &kp E          &kp R             &kp T                                          &kp Y            &kp U   &kp I      &kp O    &kp P           &kp MINUS
+&lt 1 TAB       &kp Q   &lt 7 W        &kp E          &kp R             &kp T                                          &kp Y            &kp U   &kp I      &kp O    &kp P           &kp MINUS
 &kp CAPS        &kp A   &kp S          &kp D          &kp F             &kp G                                          &kp H            &kp J   &kp K      &kp L    &kp LEFT_BRACE  &kp RIGHT_BRACE
 &kp LEFT_SHIFT  &kp Z   &kp X          &kp C          &kp V             &kp B               &kp LEFT_ALT  &kp SLASH    &kp N            &kp M   &kp COMMA  &kp DOT  &kp SEMICOLON   &kp SQT
 &kp GRAVE       &trans  &kp BACKSLASH  &lt 8 LA(ESC)  &kp LEFT_COMMAND  &lt 7 LEFT_CONTROL  &kp SPACE     &lt 3 ENTER  &lt 2 BACKSPACE                              &kp LEFT_ARROW  &kp RIGHT_ARROW
@@ -75,11 +103,11 @@
 
         number_layer {
             bindings = <
-&trans  &kp N1    &kp N2    &kp N3  &kp N4     &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&trans  &trans    &trans    &trans  &trans     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &kp N1    &kp N2    &kp N3  &kp N4     &kp N5                  &kp N6  &kp N7          &kp N8          &kp N9        &kp N0           &trans
+&trans  &trans    &trans    &trans  &trans     &trans                  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans    &trans    &trans  &trans     &trans  &trans  &trans  &trans                                                &trans           &trans
             >;
 
             label = "NUM";
@@ -110,11 +138,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp PAGE_UP    &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans     &trans  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                       &trans     &trans
+&trans  &trans             &trans            &trans          &trans             &trans                  &trans         &trans     &trans  &trans     &trans     &trans
+&trans  &trans             &trans            &trans          &trans             &trans                  &trans         &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
+&trans  &ctrl_arrow_right  &ctrl_arrow_down  &ctrl_arrow_up  &ctrl_arrow_right  &trans                  &kp PAGE_UP    &mkp LCLK  &mo 5   &mkp RCLK  &mkp MCLK  &trans
+&trans  &trans             &trans            &trans          &trans             &trans  &trans  &trans  &kp PAGE_DOWN  &trans     &trans  &trans     &trans     &trans
+&trans  &trans             &trans            &trans          &trans             &trans  &trans  &trans  &trans                                       &trans     &trans
             >;
         };
 
@@ -142,11 +170,11 @@
 
         window_switch {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans  &trans  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans  &trans  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &ctrl_arrow_left  &trans  &trans  &ctrl_arrow_right  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                               &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans            &trans          &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans            &trans            &trans          &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &ctrl_arrow_left  &ctrl_arrow_down  &ctrl_arrow_up  &ctrl_arrow_right  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans            &trans          &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                                 &trans  &trans
             >;
         };
 

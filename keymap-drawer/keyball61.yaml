@@ -43,7 +43,7 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:keyboard-esc$$', h: bt}
+  - {t: 'Ctl+$$mdi:arrow-up-bold$$', h: bt}
   - {t: /, s: '?'}
   - N
   - M

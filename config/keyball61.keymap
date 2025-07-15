@@ -85,6 +85,20 @@
 
             label = "CTRL_ARROW_DOWN";
         };
+
+        mac_screen_lock: mac_screen_lock {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "MAC_SCREEN_LOCK";
+        };
     };
 
     keymap {

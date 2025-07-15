@@ -53,10 +53,10 @@ layers:
   - {t: '''', s: '"'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
+  - {t: \, h: window_switch, s: '|'}
   - {t: 'Alt+$$mdi:keyboard-esc$$', h: bt}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:apple-keyboard-control$$', h: window_switch}
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: '$$mdi:backspace$$', h: SYM}
@@ -487,10 +487,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

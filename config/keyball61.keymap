@@ -99,6 +99,20 @@
 
             label = "MAC_SCREEN_LOCK";
         };
+
+        print_screen: print_screen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL &kp LEFT_COMMAND>;
+
+            label = "PRINT_SCREEN";
+        };
     };
 
     keymap {

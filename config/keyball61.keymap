@@ -218,11 +218,11 @@
 
         window_switch_linux {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans  &trans               &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(LC(LEFT_ARROW))  &trans  &kp LS(LC(RIGHT))    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LEFT_ARROW)      &trans  &kp LS(RIGHT_ARROW)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans  &trans               &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                  &trans  &trans                  &trans  &trans               &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(LC(LEFT_ARROW))  &trans  &kp LS(LC(RIGHT))    &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LEFT_ARROW)      &trans  &kp LS(RIGHT_ARROW)  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans
             >;
         };
     };

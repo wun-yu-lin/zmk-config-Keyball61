@@ -171,8 +171,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - +
-  - <
-  - '>'
+  - (
+  - )
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'

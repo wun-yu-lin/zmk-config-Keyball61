@@ -108,8 +108,7 @@
                 <&kp LEFT_SHIFT &kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
-                <&macro_release>,
-                <&kp LEFT_CONTROL &kp LEFT_COMMAND>;
+                <&macro_release>;
 
             label = "PRINT_SCREEN";
         };

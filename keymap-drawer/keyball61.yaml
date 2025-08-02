@@ -44,13 +44,13 @@ layers:
   - V
   - B
   - {t: 'Ctl+$$mdi:arrow-up-bold$$', h: window_switch_mac}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: FUN}
+  - {t: B, h: NUM}
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&print_screen'
+  - {t: '$$mdi:arrow-up-bold$$', h: FUN}
   - {t: '`', h: window_switch_linux, s: '~'}
   - '&mac_screen_lock'
   - {t: \, h: bt, s: '|'}
@@ -106,7 +106,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&print_screen'
+  - {t: '&print_screen', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -230,13 +230,13 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - '&print_screen'
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PLAY PAUSE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: PLAY PAUSE, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

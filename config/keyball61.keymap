@@ -253,7 +253,7 @@
 
         macro_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans  &trans  &trans  &trans  &print_screen
 &trans  &trans  &trans  &trans  &trans  &trans                            &type_test_credit_card  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &mac_screen_lock  &trans  &trans                  &trans  &trans  &trans  &trans  &trans

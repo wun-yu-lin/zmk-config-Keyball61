@@ -120,9 +120,22 @@
                 <&kp LEFT_SHIFT &kp LEFT_COMMAND>,
                 <&macro_tap>,
                 <&kp NUMBER_4>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LCMD>;
 
             label = "PRINT_SCREEN";
+        };
+
+        type_test_credit_card: type_test_credit_card {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9>,
+                <&macro_tap>,
+                <&macro_release>;
+
+            label = "TYPE_TEST_CREDIT_CARD";
         };
     };
 

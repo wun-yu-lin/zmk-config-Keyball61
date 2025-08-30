@@ -255,11 +255,11 @@
 
         macro_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &trans  &print_screen
-&trans  &trans  &trans  &trans  &trans  &trans                            &type_test_credit_card  &type_1_7  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mac_screen_lock  &trans  &trans                  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &print_screen  &print_screen_clipboard
+&trans  &trans  &trans  &trans  &trans  &trans                            &type_test_credit_card  &type_1_7  &trans  &trans  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mac_screen_lock  &trans  &trans                  &trans     &trans  &trans  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                             &trans         &trans
             >;
         };
     };

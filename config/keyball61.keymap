@@ -115,12 +115,7 @@
         print_screen: print_screen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp NUMBER_4>,
-                <&macro_tap>,
-                <&macro_release>;
-
+            bindings = <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp NUMBER_4>;
             label = "PRINT_SCREEN";
         };
 
@@ -253,11 +248,11 @@
 
         macro_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans  &trans  &trans  &trans  &print_screen
-&trans  &trans  &trans  &trans  &trans  &trans                            &type_test_credit_card  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mac_screen_lock  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &trans  &print_screen
+&trans  &trans  &trans  &trans  &trans  &trans                            &type_test_credit_card  &type_1_7  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mac_screen_lock  &trans  &trans                  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                             &trans  &trans
             >;
         };
     };

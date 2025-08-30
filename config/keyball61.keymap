@@ -133,6 +133,13 @@
             bindings = <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp N7>;
             label = "TYPE_1_7";
         };
+
+        print_screen_clipboard: print_screen_clipboard {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LCTRL &kp LEFT_COMMAND &kp NUMBER_4>;
+            label = "PRINT_SCREEN_CLIPBOARD";
+        };
     };
 
     keymap {

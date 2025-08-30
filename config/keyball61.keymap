@@ -117,9 +117,8 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT &kp LEFT_COMMAND>,
+                <&kp LEFT_SHIFT &kp LEFT_COMMAND &kp NUMBER_4>,
                 <&macro_tap>,
-                <&kp NUMBER_4>,
                 <&macro_release>;
 
             label = "PRINT_SCREEN";
@@ -128,14 +127,16 @@
         type_test_credit_card: type_test_credit_card {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9>,
-                <&macro_tap>,
-                <&macro_release>;
-
+            bindings = <&kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_4 &kp NUMBER_7 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9 &kp NUMBER_9>;
             label = "TYPE_TEST_CREDIT_CARD";
-            wait-ms = <100>;
+            wait-ms = <30>;
+        };
+
+        type_1_7: type_1_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp N7>;
+            label = "TYPE_1_7";
         };
     };
 
